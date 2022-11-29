@@ -2,11 +2,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Author moore = new Author("Alan", "Moore");
-        Book theWatchmen = new Book("The Watchmen", 1987);
+        Book theWatchmen = new Book("The Watchmen", moore, 1987);
 
         Author og = new Author("Og", "Mandino");
-        Book greatestSeller = new Book("The World's Greatest Seller", 2002);
+        Book greatestSeller = new Book("The World's Greatest Seller", og, 2002);
+
+
 
         System.out.println(theWatchmen.getTitleBook() + ", " + moore.getName() + " " + moore.getSurname() + ", " + theWatchmen.getYearPublisher() + ".");
         System.out.println(greatestSeller.getTitleBook() + ", " + og.getName() + " " + og.getSurname() + ", " + greatestSeller.getYearPublisher() + ".");
