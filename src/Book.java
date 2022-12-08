@@ -37,7 +37,7 @@ public String getTitleBook() {
     if (this.getClass() != other.getClass()) {
         return false;
     } Book b1 = (Book) other;
-    return titleBook.equals(b1.titleBook) && getTitleBook().equals(b1.getTitleBook());
+    return titleBook.equals(b1.titleBook) && author.equals(b1.author);
     }
     ///Метод HashCode
     public int hashCode() {
