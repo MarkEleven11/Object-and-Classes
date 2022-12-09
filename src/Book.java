@@ -37,11 +37,11 @@ public String getTitleBook() {
     if (this.getClass() != other.getClass()) {
         return false;
     } Book b1 = (Book) other;
-    return titleBook.equals(b1.titleBook) && author.equals(b1.author);
+    return yearPublisher == b1.yearPublisher && Objects.equals(titleBook, b1.titleBook) && Objects.equals(author, b1.author);
     }
     ///Метод HashCode
     public int hashCode() {
-    return Objects.hash(titleBook, author);
+    return Objects.hash(titleBook, author, titleBook);
     }
 
 }
